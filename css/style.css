@@ -11,6 +11,7 @@
 body{
     font-family: 'Source Sans Pro', sans-serif;
     background: #282A36;
+    color: white;
 }
 header{
     padding: 32px;
@@ -66,17 +67,67 @@ header{
     line-height: 30px;
 }
 
-#wrapper p a{
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--color-white);
-}
-
 #wrapper p a:hover{
     color:  var(--color-roxo);
     transition: .3s;
 }
 
-#links-footer a {
-    
+/* Cards */
+.cards{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+
+.card{
+    background-color: #7159C1;
+}
+
+.card-img-container img{
+    width: 100%;
+}
+
+.card-content, .card-info{
+    padding: 24px;
+}
+
+.card-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-price{
+    background-color: var(--color-roxo);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Modal */
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.modal{
+    background-color: var(--color-white);
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal{
+    color: #000;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
 }
