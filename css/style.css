@@ -26,3 +26,29 @@ header div a:hover{
     color: #50FA7B;
     transition: .3s;
 }
+
+#wrapper{
+    text-align: center;
+    padding: 32px;
+}
+#wrapper img{
+    border-radius: 50%;
+    border: 2px solid #50FA7B;
+    margin-bottom: 32px;
+}
+
+#wrapper h1{
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+}
+
+#wrapper p a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+#wrapper p a:hover{
+    color: #50FA7B;
+    transition: .3s;
+}
