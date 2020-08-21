@@ -3,16 +3,16 @@
 {% block content %}
 
     <div id="wrapper">
-        <img src="https://avatars3.githubusercontent.com/u/43589505?s=460&u=7c7159850e84526c0127a00fa34e70da1a938e4f&v=4" alt="Júnior Silva">
-        <h1>Júniior Silva</h1>
-        <h2>Developer web</h2>
-        <p>Programador fullstack, focado em trazer o melhor ensino para iniciantes em programação.</p>
+        <img src="{{ about.avatar_url }}" alt="Imagem de {{ about.name }}">
+        <h1>{{ about.name }}</h1>
+        <h2>{{ about.role }}</h2>
+        <p>{{ about.descrition }}</p>
     </div>
 
     <div id="links-footer" class="links">
-        <a href="https://github.com/juniorsilvacc" target="_blank">GitHub</a>
-        <a href="https://www.instagram.com/juniorsilva.eng/" target="_blank">Instagram</a>
-        <a href="https://www.linkedin.com/in/j%C3%BAniior-silva-7937b3192/" target="_blank">Linkedin</a>
+        {% for link in about.links %}
+        <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+        {% endfor %}
     </div>
     
 {% endblock %}
