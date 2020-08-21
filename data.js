@@ -3,7 +3,8 @@ module.exports = [
         id: "GykTLqODQuU",
         title: "Formulario animado com JS puro e CSS Animation",
         duration: "57 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id: "HN1UjzRSdBk",
@@ -21,7 +22,8 @@ module.exports = [
         id: "R3S8DEzEn6s",
         title: "Styled components",
         duration: "57 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id: "GSqR2i-Pq6o",
@@ -33,6 +35,7 @@ module.exports = [
         id: "2alg7MQ6_sI",
         title: "Git e Github na prática",
         duration: "33 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     }
 ]
